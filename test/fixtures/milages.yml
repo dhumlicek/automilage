@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vehicle: one
+  date: 
+  amount: 1.5
+  cost: 1.5
+  mpg: 1.5
+  cpg: 1.5
+  cpm: 1.5
+  trip: 1.5
+  serviced: MyString
+  notes: MyText
+
+two:
+  vehicle: two
+  date: 
+  amount: 1.5
+  cost: 1.5
+  mpg: 1.5
+  cpg: 1.5
+  cpm: 1.5
+  trip: 1.5
+  serviced: MyString
+  notes: MyText

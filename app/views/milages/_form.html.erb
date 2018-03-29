@@ -1,0 +1,67 @@
+<%= form_for(milage) do |f| %>
+  <% if milage.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(milage.errors.count, "error") %> prohibited this milage from being saved:</h2>
+
+      <ul>
+      <% milage.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :vehicle_id %>
+    <%= f.text_field :vehicle_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :date %>
+    <%= f.text_field :date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :amount %>
+    <%= f.text_field :amount %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cost %>
+    <%= f.text_field :cost %>
+  </div>
+
+  <div class="field">
+    <%= f.label :mpg %>
+    <%= f.text_field :mpg %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cpg %>
+    <%= f.text_field :cpg %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cpm %>
+    <%= f.text_field :cpm %>
+  </div>
+
+  <div class="field">
+    <%= f.label :trip %>
+    <%= f.text_field :trip %>
+  </div>
+
+  <div class="field">
+    <%= f.label :serviced %>
+    <%= f.text_field :serviced %>
+  </div>
+
+  <div class="field">
+    <%= f.label :notes %>
+    <%= f.text_area :notes %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

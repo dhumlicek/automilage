@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  year: 1
+  brand: MyString
+  make: MyString
+  model: MyString
+  owned: false
+
+two:
+  year: 1
+  brand: MyString
+  make: MyString
+  model: MyString
+  owned: false
