@@ -14,16 +14,19 @@
   <div class="field">
     <%= f.label :year %>
     <%= f.number_field :year %>
+    <!--<%= f.date_field(:year) %>
+    <%= f.date_select(:year, :start_year => 1930, :end_year =>  Date.today.year + 1, 
+                      discard_month: false, discard_day: false) %> -->
   </div>
 
   <div class="field">
     <%= f.label :make %>
-    <%= f.text_field :make %>
+    <%= f.text_field :make, placeholder: "Ford, Dodge, Toyota, etc" %>
   </div>
 
   <div class="field">
     <%= f.label :model %>
-    <%= f.text_field :model %>
+    <%= f.text_field :model, placeholder: "F150, Charger, Camry, etc" %>
   </div>
 
   <div class="field">
